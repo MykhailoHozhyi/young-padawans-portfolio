@@ -1,4 +1,5 @@
 import './js/header';
+import './js/mobile-menu';
 import './js/hero';
 import './js/about-me-accord';
 import './js/about-me-swiper';

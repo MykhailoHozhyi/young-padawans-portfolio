@@ -13,7 +13,9 @@
 
 /* Sections style */
 @import url('./header.css');
+@import url('./mobile-menu.css');
 @import url('./hero.css');
+@import url('./about-me-title.css');
 @import url('./about-me-accord.css');
 @import url('./about-me-swiper.css');
 @import url('./benefits.css');
