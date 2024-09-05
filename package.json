@@ -17,6 +17,9 @@
   "author": "Mykhailo Hozhyi <gozhenky@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.3.4",
+    "basiclightbox": "^5.0.4",
+    "swiper": "^11.1.12",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
