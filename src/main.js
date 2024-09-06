@@ -9,4 +9,3 @@ import './js/covers';
 import './js/reviews';
 import './js/footer';
 import './js/scroll-up';
-import './js/scroll-bar';
