@@ -1,2 +1,2 @@
-import './js/about-me-accord';
-import './js/about-me-swiper';
+import './about-me-accord';
+import './about-me-swiper';
