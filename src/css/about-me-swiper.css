@@ -1,0 +1,75 @@
+.container-about-me-swiper {
+  position: relative;
+  display: flex;
+  min-height: 0;
+  padding: 0;
+}
+
+.swiper-about-me-left {
+  margin: 0 auto 0 0;
+}
+
+.swiper-about-me-right {
+  margin: 0 0 0 auto;
+}
+
+.container-skills {
+  width: 260px;
+}
+
+.skill-active {
+  background-color: #0041e8;
+}
+
+.container-item-skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100%;
+  max-width: 130px;
+  height: 130px;
+  color: #ffffff;
+}
+
+.btn-icon-right {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  height: 28px;
+}
+
+.btn-icon-right .icon-arrow-right {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: rgba(250, 250, 250, 0.2);
+}
+
+.js-swiper-button-next::after {
+  content: none;
+}
+/*  ==================== ADAPTIVE 768px ====================  */
+@media screen and (min-width: 768px) {
+  .container-skills {
+    width: 600px;
+  }
+
+  .container-item-skills {
+    font-size: 20px;
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .btn-icon-right .icon-arrow-right {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/*  ==================== ADAPTIVE 1440px ====================  */
+@media screen and (min-width: 1440px) {
+  .container-skills {
+    width: 1200px;
+  }
+}
