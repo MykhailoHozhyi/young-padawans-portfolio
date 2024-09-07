@@ -4,7 +4,6 @@
 .title-faq {
   margin-left: 16px;
   margin-bottom: 32px;
-  font-family: Inter Tight;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -106,5 +105,16 @@ p.answer-faq {
   align-items: center;
   padding: 12px;
   border: 1px solid #fafafa33;
-  border-radius: 50%; /* Зробить бордер круглим */
+  border-radius: 50%;
+}
+
+@media (min-width: 1440px) {
+  .ac.accordion-faq-item {
+    width: calc(50% - 15px); /* Дві колонки */
+    border-bottom: none;
+  }
+  .accordion-container-faq {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
