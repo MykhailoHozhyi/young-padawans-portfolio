@@ -4,10 +4,15 @@
 }
 .footer-bg{
     background-image: url(/images/work-together/work-together-bg.png);
-    background-position: right -628px bottom -10px;
-    background-size: 728px 100%;
+    background-position: right -269px bottom -10px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+@media screen and (min-resolution: 192dpi) {
+    .footer-bg {
+      background-image: url(/images/work-together/work-together-bg@2x.png);
+    }
+  }
 .footer-logo{
     width: 44px;
     height: 44px;
@@ -23,7 +28,7 @@
 }
 
 .title-footer-work {
-    color: #ED3B44;
+    color: #0041E8;
 }
 
 .title-footer-together {
@@ -36,7 +41,7 @@
 }
 
 .footer-input {
-    width: 245px;
+    width: 100%;
     height: 44px;
     background-color: inherit;
     border-left: none;
@@ -53,23 +58,24 @@
 .footer-input:focus {
     border-bottom: 1px solid rgba(250, 250, 250, 0.50); 
 }
-input:-internal-autofill-selected{
-    background-color: rgba(250, 250, 250, 0.20) !important;
-}
 .footer-input:valid:not(:placeholder-shown) {
     border-bottom: 1px solid #3CBC81; 
 }
-
 .footer-input:invalid:not(:placeholder-shown) {
     border-bottom: 1px solid #170706; 
 }
-
+.input:-webkit-autofill {
+    background-color: none !important;
+    color: #FAFAFA !important;
+    border: 1px solid none!important;
+    transition: background-color 5000s ease-in-out 0s;
+}
 .footer-btn-send {
     border: none;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #ED3B44;
+    background-color: #0041E8;
     color: #FAFAFA;
     line-height: normal;
     letter-spacing: -0.32px;
@@ -77,22 +83,26 @@ input:-internal-autofill-selected{
     margin-bottom: 64px;
     margin-right: 78px;
 }
-
 .footer-btn-send:hover {
-    background-color: #E0373F;
+    background-color: #0041E8;
+    opacity: 0.8;
 }
-
-.conact {
+.contact {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
 }
-.conact-el {
+.contact-el {
     padding: 10px 12px;
     border-radius: 60px;
     border: 1px solid rgba(250, 250, 250, 0.20);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.conact-link{
+
+.contact-el:hover {
+    border: 1px solid #FAFAFA;
+}
+.contact-link{
     font-size: 14px;
     font-style: normal;
 }
@@ -110,11 +120,9 @@ input:-internal-autofill-selected{
 .error-message {
     color: #E74A3B;
 }
-
 .footer-input:valid:not(:placeholder-shown) ~ .success-message {
     display: block;
 }
-
 .footer-input:invalid:not(:placeholder-shown) ~ .error-message {
     display: block;
 }
