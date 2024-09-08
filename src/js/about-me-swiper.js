@@ -1,7 +1,5 @@
 import Swiper from 'swiper';
 
-console.dir(KeyboardEvent);
-
 const containerSwiper = document.querySelector('.swiper-about-me');
 const swiperBtnNext = document.querySelector('.js-swiper-button-next');
 
@@ -52,7 +50,6 @@ if (screen.width < 768) {
 
   swiperBtnNext.addEventListener('click', onNextSkill);
   containerSwiper.addEventListener('mousedown', onNextSkill);
-  // containerSwiper.addEventListener('keydown', onNextSkill);
 } else if (screen.width < 1440) {
   const onNextSkill = () => {
     for (let i = 0; i <= skills.length - 1; i++) {
@@ -76,7 +73,6 @@ if (screen.width < 768) {
 
   swiperBtnNext.addEventListener('click', onNextSkill);
   containerSwiper.addEventListener('mousedown', onNextSkill);
-  // containerSwiper.addEventListener('keydown', onNextSkill);
 } else {
   const onNextSkill = () => {
     for (let i = 0; i <= skills.length - 1; i++) {
@@ -97,5 +93,4 @@ if (screen.width < 768) {
 
   swiperBtnNext.addEventListener('click', onNextSkill);
   containerSwiper.addEventListener('mousedown', onNextSkill);
-  // containerSwiper.addEventListener('keydown', onNextSkill);
 }
