@@ -10,23 +10,19 @@ body {
 }
 
 .container {
-  min-width: 320px;
   max-width: 375px;
   padding: 0 16px;
   margin: 0 auto;
 }
 
 .section {
-  padding: 32px 0;
+  padding-top: 64px;
 }
 
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 32px;
-  }
-  .section {
-    padding: 48px 0;
   }
 }
 
@@ -36,6 +32,6 @@ body {
     padding: 0 32px;
   }
   .section {
-    padding: 82px 0;
+    padding-top: 96px;
   }
 }
