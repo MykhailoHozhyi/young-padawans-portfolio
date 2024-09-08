@@ -64,12 +64,24 @@
 .footer-input:invalid:not(:placeholder-shown) {
     border-bottom: 1px solid #170706; 
 }
-.input:-webkit-autofill {
-    background-color: none !important;
-    color: #FAFAFA !important;
-    border: 1px solid none!important;
-    transition: background-color 5000s ease-in-out 0s;
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #1c1d20 inset !important; /* Зміна фону */
+    -webkit-text-fill-color: #fff !important; /* Білий колір тексту */
+    transition: background-color 5000s ease-in-out 0s; /* Плавний перехід фону */
+    outline: none; /* Видалення outline */
 }
+
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #1c1d20 inset !important; /* Фон */
+    -webkit-text-fill-color: #fff !important; /* Колір тексту */
+    border: none; /* Видалення обведення */
+    outline: none; /* Видалення outline */
+}
+
 .footer-btn-send {
     border: none;
     width: 100px;
@@ -175,7 +187,7 @@ top: 20px;
     letter-spacing: -0.4px;
     margin-bottom: 16px;
 }
-.title-footer-sup{
+.title-footer-message{
     text-align: center;
     color: rgba(250, 250, 250, 0.60);
     letter-spacing: -0.32px;
