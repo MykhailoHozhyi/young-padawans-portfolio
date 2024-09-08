@@ -50,6 +50,10 @@
 }
 /*  ==================== ADAPTIVE 768px ====================  */
 @media screen and (min-width: 768px) {
+  .swiper-about-me-left {
+    margin-right: 64px;
+  }
+
   .container-skills {
     max-width: 600px;
   }
@@ -68,6 +72,10 @@
 
 /*  ==================== ADAPTIVE 1440px ====================  */
 @media screen and (min-width: 1440px) {
+  .swiper-about-me-left {
+    margin-right: 72px;
+  }
+
   .container-skills {
     max-width: 1200px;
   }
