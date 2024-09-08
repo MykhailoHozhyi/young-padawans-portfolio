@@ -1,8 +1,6 @@
 .hero {
-  max-width: 375px;
-  min-width: 320px;
   margin: 0 auto;
-  padding-top: 218px;
+  padding-top: 281px;
   background: linear-gradient(
     -90deg,
     #1c1d20 49.69%,
@@ -11,8 +9,8 @@
   );
   background-image: url(../images/hero/hero-blue-bg.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: -268px;
+  background-size: 578px 100%;
 }
 
 @media screen and (min-resolution: 192dpi) {
@@ -25,6 +23,7 @@
   display: flex;
   flex-direction: column;
   gap: 212px;
+  padding-bottom: 32px;
 }
 
 .hero-title {
@@ -74,8 +73,13 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    background-position: -147px;
+    background-size: 728px 100%;
     padding-top: 300px;
+  }
+
+  .hero-wrapper {
+    gap: 187px;
   }
 
   .hero-title {
@@ -107,7 +111,13 @@
 
 @media screen and (min-width: 1440px) {
   .hero {
-    max-width: 1440px;
+    background-position: left;
+    background-size: 728px 100%;
+    padding-top: 300px;
+  }
+
+  .hero-wrapper {
+    gap: 243px;
   }
 
   .hero-title {
