@@ -110,11 +110,57 @@ p.answer-faq {
 
 @media (min-width: 1440px) {
   .ac.accordion-faq-item {
-    width: calc(50% - 15px); /* Дві колонки */
+    width: calc(50% - 15px);
     border-bottom: none;
   }
   .accordion-container-faq {
     display: flex;
     flex-wrap: wrap;
+
+    list-style: none;
+  }
+  .accordion-container-faq {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+    position: relative;
+  }
+
+  .accordion-container-faq::before {
+    content: '';
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 0;
+    bottom: 0;
+    left: 49%;
+    width: 1px;
+    height: 100vh;
+    background-color: #fafafa33;
+    height: 100%;
+    transform: translateX(-50%);
+  }
+  .li#ac-0.ac.accordion-faq-item.js-enebled {
+    margin-top: 0;
+  }
+  #ac-0,
+  #ac-1,
+  #ac-2,
+  #ac-3,
+  #ac-4,
+  #ac-5 {
+    margin-top: 0;
+  }
+
+  .accordion-faq-item:nth-child(6n-1) {
+    border-bottom: 1px solid #fafafa33;
+  }
+  li#ac-0.ac.accordion-faq-item,
+  li#ac-4.ac.accordion-faq-item,
+  li#ac-2.ac.accordion-faq-item {
+    padding-right: 32px;
+  }
+  li#ac-1.ac.accordion-faq-item,
+  li#ac-3.ac.accordion-faq-item,
+  li#ac-5.ac.accordion-faq-item {
+    padding-left: 32px;
   }
 }
