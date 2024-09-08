@@ -1,5 +1,8 @@
 import Swiper from 'swiper';
 
+console.dir(KeyboardEvent);
+
+const containerSwiper = document.querySelector('.swiper-about-me');
 const swiperBtnNext = document.querySelector('.js-swiper-button-next');
 
 const swiperAboutMe = new Swiper('.swiper-about-me', {
@@ -7,6 +10,10 @@ const swiperAboutMe = new Swiper('.swiper-about-me', {
   slidesPerGroup: 1,
   speed: 500,
   allowTouchMove: false,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
   breakpoints: {
     320: {
       slidesPerView: 2,
@@ -44,6 +51,8 @@ if (screen.width < 768) {
   };
 
   swiperBtnNext.addEventListener('click', onNextSkill);
+  containerSwiper.addEventListener('mousedown', onNextSkill);
+  // containerSwiper.addEventListener('keydown', onNextSkill);
 } else if (screen.width < 1440) {
   const onNextSkill = () => {
     for (let i = 0; i <= skills.length - 1; i++) {
@@ -66,6 +75,8 @@ if (screen.width < 768) {
   };
 
   swiperBtnNext.addEventListener('click', onNextSkill);
+  containerSwiper.addEventListener('mousedown', onNextSkill);
+  // containerSwiper.addEventListener('keydown', onNextSkill);
 } else {
   const onNextSkill = () => {
     for (let i = 0; i <= skills.length - 1; i++) {
@@ -85,4 +96,6 @@ if (screen.width < 768) {
   };
 
   swiperBtnNext.addEventListener('click', onNextSkill);
+  containerSwiper.addEventListener('mousedown', onNextSkill);
+  // containerSwiper.addEventListener('keydown', onNextSkill);
 }
