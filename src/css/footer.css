@@ -4,7 +4,7 @@
 }
 .footer-bg{
     background-image: url(/images/work-together/work-together-bg.png);
-    background-position: right -269px bottom -10px;
+    background-position: right -300px bottom -10px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -183,8 +183,8 @@ top: 20px;
 }
 @media screen and (min-width: 768px) {
     .footer-bg{
-        background-size: 728px 100%;
-        background-position: right -520px bottom -10px;
+        background-size: 728px 636px;
+        background-position: right -544px bottom -10px;
     }
     .footer-logo{
         width: 70px;
@@ -240,7 +240,7 @@ top: 20px;
 @media screen and (min-width: 1440px){
     .footer-bg{
         background-size: 728px 100%;
-        background-position: right -344px bottom -10px;
+        background-position: right -385px bottom -10px;
     }
   .footer-form{
     padding: 0 196px 169px;
