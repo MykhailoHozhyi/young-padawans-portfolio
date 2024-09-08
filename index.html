@@ -14,12 +14,32 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script type="module" crossorigin src="/young-padawans-portfolio/index.js"></script>
   <link rel="modulepreload" crossorigin href="/young-padawans-portfolio/assets/vendor-BaWhf9Kk.js">
-  <link rel="stylesheet" crossorigin href="/young-padawans-portfolio/assets/index-BuO5NjGq.css">
+  <link rel="stylesheet" crossorigin href="/young-padawans-portfolio/assets/index-DaMkEwj8.css">
 </head>
 
 <body>
   
-  
+  <!-- <header>
+  <button id="burger-menu">☰</button>
+</header> -->
+
+<div class="mobile-menu-backdrop">
+  <nav class="mobile-menu" id="mobileMenu" class="hidden">
+    <button class="mobile-close-btn" id="closeMenu" type="button">
+      <svg class="mobile-close-icon">
+        <use href="/young-padawans-portfolio/assets/icons-sprite-C8WDg4Bz.svg#close"></use>
+      </svg>
+    </button>
+    <ul class="mobile-nav-list">
+      <li class="mobile-navigation-item"><a href="#about">About me</a></li>
+      <li class="mobile-navigation-item"><a href="#benefits">Benefits</a></li>
+      <li class="mobile-navigation-item"><a href="#projects">Projects</a></li>
+      <li class="mobile-navigation-item"><a href="#faq">FAQ</a></li>
+    </ul>
+    <button class="order-project" id="order-project">Order the project</button>
+  </nav>
+</div>
+
 
   <main>
     <section class="hero section">
@@ -58,7 +78,41 @@
 </section>
     <section class="about-me section" id="about-me">
   <div class="container">
-    
+    <div class="about-me-title-container">
+  <div class="about-me-title">
+    <h2 class="about-me-header">
+      I work with people all over the world to create impressive and
+      <span class="about-me-span-functional">functional</span>
+      <span class="about-me-span-websites">websites</span> that reflect each
+      client's unique personality.
+    </h2>
+  </div>
+  <div class="about-me-picture">
+    <picture>
+      <source
+        srcset="../images/about-me/about-me-desktop-img.jpg 1x, ../images/about-me/about-me-desktop-img@2x.jpg 2x"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="../images/about-me/about-me-tablet-img.jpg 1x, ../images/about-me/about-me-tablet-img@2x.jpg 2x"
+        media="(min-width: 768px)"
+      />
+
+      <source
+        srcset="../images/about-me/about-me-mobile-img.jpg 1x, ../images/about-me/about-me-mobile-img@2x.jpg 2x"
+        media="(max-width: 767px)"
+      />
+      <img
+        class="about-me-title-img"
+        src="../images/about-me/about-me-desktop-img.jpg"
+        alt="man"
+        width="343"
+        height="500"
+      />
+    </picture>
+  </div>
+</div>
+
     <ul class="accordion-container about-accordion-container">
   <li class="ac about-ac">
     <div class="ac-header about-ac-header">
