@@ -68,11 +68,8 @@
   background-color: transparent;
   cursor: pointer;
   margin-top: 32px;
-}
-.benefits-button:hover {
-  border: 1px solid rgba(60, 70, 253, 0.2);
-  background-color: #0041e8;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .benefits-button-link {
@@ -117,7 +114,10 @@
     margin-bottom: 0;
     width: 50%;
   }
-
+  .benefits-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
   .benefits-list-box {
     width: 51%;
   }
@@ -134,8 +134,8 @@
   .benefits-button {
     margin: 0 auto 0 0;
   }
-  .benefits-wrapper {
-    display: flex;
-    justify-content: space-between;
+  .benefits-button:hover {
+    border: 1px solid rgba(60, 70, 253, 0.2);
+    background-color: #0041e8;
   }
 }
