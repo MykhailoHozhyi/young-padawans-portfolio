@@ -72,6 +72,7 @@
 .benefits-button:hover {
   border: 1px solid rgba(60, 70, 253, 0.2);
   background-color: #0041e8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .benefits-button-link {
