@@ -1,0 +1,62 @@
+<header class="header section">
+  <div class="container-header container">
+    <div class="photo-name">
+      <picture
+        ><source
+          srcset="
+            /images/header/header-desktop-logo.jpg    1x,
+            /images/header/header-desktop-logo@2x.jpg 2x
+          "
+        />
+        <img
+          class="logo"
+          src="/images/header/header-desktop-logo.jpg"
+          alt="man"
+          width="80px"
+          height="80px"
+        />
+      </picture>
+      <p class="header-name">jefferson*</p>
+    </div>
+    <div class="menu-container">
+      <button class="menu-btn" id="menuBtn">Menu</button>
+      <nav class="menu-content" id="menuContent">
+        <ul>
+          <li>
+            <a class="header-menu-items" href="/src/partials/about-me.html"
+              >About me</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-items" href="/src/partials/benefits.html"
+              >Benefits</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-items" href="/src/partials/projects.html"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-items" href="/src/partials/faq.html">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <button class="burger-menu-btn" type="button">
+      <svg
+        class="burger-menu-icon"
+        width="28"
+        height="28"
+        aria-label="icon burger menu"
+      >
+        <use href="/images/icons/icons-sprite.svg#burger"></use>
+      </svg>
+    </button>
+
+    <button class="header-order-btn">
+      <a href="#work-together">Order the project</a>
+    </button>
+  </div>
+</header>
