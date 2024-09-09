@@ -6,6 +6,9 @@
   justify-content: center;
   position: absolute;
   width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .container-header {
@@ -106,8 +109,8 @@
   .header-order-btn {
     border-radius: 60px;
     padding: 18px 24px;
-    width: 163px;
-    height: 55px;
+    max-width: 163px;
+    height: auto;
     background: #0041e8;
     border: none;
     display: block;
