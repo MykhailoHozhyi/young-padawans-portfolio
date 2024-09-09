@@ -1,25 +1,41 @@
 import Swiper from 'swiper/bundle';
 
+import prjDeskTopSl1 from '/images/projects/projects-desktop-slide-1.jpg';
+import prjDeskTopSl12x from '/images/projects/projects-desktop-slide-1@2x.jpg';
+import prjMobSl1 from '/images/projects/projects-mobile-slide-1.jpg';
+import prjMobSl12x from '/images/projects/projects-mobile-slide-1@2x.jpg';
+
+import prjDeskTopSl2 from '/images/projects/projects-desktop-slide-2.jpg';
+import prjDeskTopSl22x from '/images/projects/projects-desktop-slide-2@2x.jpg';
+import prjMobSl2 from '/images/projects/projects-mobile-slide-2.jpg';
+import prjMobSl22x from '/images/projects/projects-mobile-slide-2@2x.jpg';
+
+import prjDeskTopSl3 from '/images/projects/projects-desktop-slide-3.jpg';
+import prjDeskTopSl32x from '/images/projects/projects-desktop-slide-3@2x.jpg';
+import prjMobSl3 from '/images/projects/projects-mobile-slide-3.jpg';
+import prjMobSl32x from '/images/projects/projects-mobile-slide-3@2x.jpg';
+
+
 const projects = [
   {
-    imgDeskTop: '/images/projects/projects-desktop-slide-1.jpg',
-    imgDeskTop2x: '/images/projects/projects-desktop-slide-1@2x.jpg',
-    imgMob: '/images/projects/projects-mobile-slide-1.jpg',
-    imgMob2x: '/images/projects/projects-mobile-slide-1@2x.jpg',
+    imgDeskTop: `${prjDeskTopSl1}`,
+    imgDeskTop2x: `${prjDeskTopSl12x}`,
+    imgMob: `${prjMobSl1}`,
+    imgMob2x: `${prjMobSl12x}`,
     alt: 'Project 1'
   },
   {
-    imgDeskTop: '/images/projects/projects-desktop-slide-2.jpg',
-    imgDeskTop2x: '/images/projects/projects-desktop-slide-2@2x.jpg',
-    imgMob: '/images/projects/projects-mobile-slide-2.jpg',
-    imgMob2x: '/images/projects/projects-mobile-slide-2@2x.jpg',
+    imgDeskTop: `${prjDeskTopSl2}`,
+    imgDeskTop2x: `${prjDeskTopSl22x}`,
+    imgMob: `${prjMobSl2}`,
+    imgMob2x: `${prjMobSl22x}`,
     alt: 'Project 2'
   },
   {
-    imgDeskTop: '/images/projects/projects-desktop-slide-3.jpg',
-    imgDeskTop2x: '/images/projects/projects-desktop-slide-3@2x.jpg',
-    imgMob: '/images/projects/projects-mobile-slide-3.jpg',
-    imgMob2x: '/images/projects/projects-mobile-slide-3@2x.jpg',
+    imgDeskTop: `${prjDeskTopSl3}`,
+    imgDeskTop2x: `${prjDeskTopSl32x}`,
+    imgMob: `${prjMobSl3}`,
+    imgMob2x: `${prjMobSl32x}`,
     alt: 'Project 3'
   }
 ];
