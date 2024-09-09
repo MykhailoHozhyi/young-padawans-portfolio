@@ -1,5 +1,5 @@
 /* ===================MOBILE STYLES======================= */
-
+/* 
 @media screen and (min-width: 375px) {
   .container-header {
     position: absolute;
@@ -31,7 +31,7 @@
   .header-order-btn {
     display: none;
   }
-}
+} */
 
 /*==========================TABLET STYLES===========================*/
 
