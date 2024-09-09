@@ -157,7 +157,7 @@ p.answer-faq {
   .ac .ac-trigger:after {
     content: none;
   }
-  .ac .ac-trigger:beffor {
+  .ac .ac-trigger:before {
     content: none;
   }
   .ac.accordion-faq-item.null,
