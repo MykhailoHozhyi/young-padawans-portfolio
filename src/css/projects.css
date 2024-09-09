@@ -1,0 +1,270 @@
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.section-projects-title {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+    margin-bottom: 32px;
+}
+
+.projects-list {
+    border-radius: 0 0 24px 24px;
+    margin-bottom: 32px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    /* text-align: center; */
+    /* font-size: 18px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 24px;
+    height: 24px;
+    background-color: none;
+    /* border-radius: 50%; */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 68px;
+    padding: 5px;
+    z-index: 10;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 16px;
+    display: none;
+}
+
+.swiper-button-prev::before,
+.swiper-button-next::before {
+    display: none;
+}
+
+/* Позиціонуємо кнопки під слайдером */
+.swiper-button-prev {
+    position: static;
+}
+
+.swiper-button-next {
+    position: static;
+}
+
+.swiper-button-icon {
+    stroke: #FAFAFA;
+}
+
+.projects-item-content {
+    border-radius: 24px 24px 0 0;
+    padding: 32px;
+    background-color: #fafafa;
+}
+
+.projects-item-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 6px;
+    color: #1c1d20;
+    margin-bottom: 96px;
+}
+
+.projects-item-technologies-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px solid rgba(28, 29, 32, 0.2);
+    border-radius: 60px;
+    padding: 13px 18px;
+    height: 45px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+}
+
+.projects-item-text {
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+    color: #1c1d20;
+    margin-bottom: 32px;
+}
+
+.projects-item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    background-color: #0041e8;
+    border-radius: 60px;
+    border-radius: 60px;
+    padding: 13px 32px;
+    width: 141px;
+    height: 45px;
+    border: none;
+}
+
+.projects-item-link:hover,
+.projects-item-link:focus {
+    background-color: #4E79E9;
+}
+
+.swiper-slide:not(.swiper-slide-active) .projects-item-link:focus,
+.swiper-slide:not(.swiper-slide-active) .projects-item-link:hover {
+    background-color: initial;
+    /* Скидання кольору на неактивних слайдах */
+}
+
+.project-item-image {
+    width: 100%;
+    max-width: 375px;
+    height: 395px;
+    background: #242527;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 24px 24px;
+}
+
+.project-item-image img {
+    width: 100%;
+    max-width: 311px;
+    height: 195px;
+    /* object-position: center; */
+}
+
+.projects-arrows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 116px;
+    height: 52px;
+    margin: 0 auto;
+}
+
+.projects-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* border: 1px solid rgba(250, 250, 250, 0.2); */
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 60px;
+    padding: 14px;
+    width: 52px;
+    height: 52px;
+    background: none;
+    cursor: pointer;
+    color: #fafafa;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+
+    .projects-item-content {
+        padding: 64px;
+    }
+
+    .projects-item-technologies {
+        margin-bottom: 164px;
+    }
+
+    .projects-item-technologies-tag {
+        height: 55px;
+        padding: 18px;
+    }
+
+    .projects-item-text {
+        font-size: 44px;
+        line-height: 1;
+        margin-right: 82px;
+    }
+
+    .projects-item-link {
+        width: 177px;
+        height: 55px;
+    }
+
+    .project-item-image {
+        max-width: 100%;
+        max-height: 625px;
+        height: 625px;
+    }
+
+    .project-item-image img {
+        max-width: 614px;
+        height: 385px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1440px) {
+
+    .project-item {
+        flex-direction: row;
+    }
+
+    .projects-item-text {
+        margin-right: 66px;
+        width: 494px;
+    }
+
+    .projects-item-content {
+        border-radius: 24px 0 0 24px;
+        height: 625px;
+        padding: 64px;
+        width: 688px;
+    }
+
+    .projects-item-technologies {
+        margin-bottom: 223px;
+    }
+
+    .project-item-image {
+        border-radius: 0 24px 24px 0;
+    }
+
+    .projects-item-link {
+        padding: 18px 50px;
+        width: 177px;
+        height: 55px;
+    }
+
+
+}
