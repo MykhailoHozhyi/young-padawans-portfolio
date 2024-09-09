@@ -7,7 +7,7 @@
     #001958 67.71%,
     #0041e8 99.91%
   );
-  background-image: url(../images/hero/hero-blue-bg.png);
+  background-image: url(/images/hero/hero-blue-bg.png);
   background-repeat: no-repeat;
   background-position: -268px;
   background-size: 578px 100%;
@@ -15,7 +15,7 @@
 
 @media screen and (min-resolution: 192dpi) {
   .hero {
-    background-image: url(../images/hero/hero-blue-bg@2x.png);
+    background-image: url(/images/hero/hero-blue-bg@2x.png);
   }
 }
 
@@ -49,22 +49,22 @@
   gap: 4px;
 }
 
-.hero-social-list-item {
-  display: flex;
+.hero-social-link {
+  display: block;
   width: 37px;
   height: 37px;
   padding: 10px 8px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  text-align: center;
   border-radius: 60px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-address {
+.hero-address-email {
+  display: block;
   height: 37px;
   padding: 10px 12px;
+  text-align: center;
   border-radius: 60px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   font-style: normal;
@@ -97,13 +97,13 @@
     gap: 8px;
   }
 
-  .hero-social-list-item {
+  .hero-social-link {
     width: 55px;
     height: 55px;
     padding: 18px 16px;
   }
 
-  .hero-address {
+  .hero-address-email {
     height: 55px;
     padding: 18px 24px;
   }
@@ -125,8 +125,8 @@
     margin: 0 auto;
   }
 
-  .hero-social-list-item:hover,
-  .hero-address:hover {
+  .hero-social-link:hover,
+  .hero-address-email:hover {
     border: 1px solid #fafafa;
   }
 }

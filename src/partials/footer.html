@@ -1,0 +1,55 @@
+<footer class="section footer-bg" id="work-together">
+    <div class="container">
+        <form class="footer-form">
+             <picture>
+                <source
+                media="(min-width: 768px)"
+                srcset="/images/work-together/work-together-desktop-logo.jpg 1x,
+                /images/work-together/work-together-desktop-logo@2x.jpg 2x"
+                />
+                <source 
+                media="(min-width: 320px)"
+                srcset="/images/work-together/work-together-mobile-logo.jpg 1x,
+                /images/work-together/work-together-mobile-logo@2x.jpg 2x"
+                />
+                <img class="footer-logo" 
+                src="/images/work-together/work-together-desktop-logo.jpg" 
+                alt=""
+                width="70"
+                height="70"
+                loading="lazy">
+             </picture>
+            <h2 class="title-footer">LET’S <span class="title-footer-work"> WORK </span></h2>
+<h2 class="title-footer-together">TOGETHER</h2>
+<div class="input-box">
+    <input class="footer-input" type="email" placeholder="clients@gmail.com" name="email" required 
+    pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
+    <span class="message success-message">Succes!</span>
+    <span class="message error-message">Invalid email, try again</span>
+<input class="footer-input textarea" name="comment" placeholder="comments" required></input>
+  <button class="footer-btn-send" type="submit">Send</button>
+</div>
+      <address>
+        <ul class="contact">
+          <li class="contact-el">
+            <a class="contact-link" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+          </li>
+          <li class="contact-el">
+            <a class="contact-link" href="tel:+3801111111111">+380 11 1111 11 11</a>
+          </li>
+        </ul>        
+      </address>
+    </form> 
+    </div>
+  </footer>
+  <div class="modal-overlay">
+    <div class="modal-window">
+        <button class="close-btn" type="button">
+            <svg class="close-svg" width="22" height="22">
+                <use href="/images/icons/icons-sprite.svg#close"></use>
+            </svg>
+        </button>
+        <h3 class="title-footer-modal"></h3>
+        <p class="title-footer-message"></p>
+    </div>
+  </div>
