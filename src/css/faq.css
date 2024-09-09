@@ -1,5 +1,4 @@
 .title-faq {
-  margin-left: 16px;
   margin-bottom: 32px;
   font-size: 16px;
   font-weight: 600;
@@ -53,10 +52,7 @@
 .ac-trigger.accordion-faq-button:focus {
   color: #fafafa;
 }
-.accordion-container-faq.accordion-faq-list {
-  margin-left: 16px;
-  margin-right: 16px;
-}
+
 button#ac-trigger-0.ac-trigger.accordion-faq-button::after {
   display: none;
 }
@@ -105,7 +101,15 @@ p.answer-faq {
   border: 1px solid #fafafa33;
   border-radius: 50%;
 }
-
+.ac .ac-trigger::before {
+  content: none;
+}
+.ac .ac-trigger::after {
+  content: none;
+}
+.ac.is-active > .ac-header .ac-trigger::after {
+  content: none;
+}
 @media (min-width: 1440px) {
   .ac.accordion-faq-item {
     width: calc(50% - 15px);
@@ -154,10 +158,10 @@ p.answer-faq {
   .accordion-faq-item:nth-child(6n-1) {
     border-bottom: 1px solid #fafafa33;
   }
-  .ac .ac-trigger:after {
+  .ac .ac-trigger::after {
     content: none;
   }
-  .ac .ac-trigger:before {
+  .ac .ac-trigger::before {
     content: none;
   }
   .ac.accordion-faq-item.null,
@@ -165,7 +169,7 @@ p.answer-faq {
   .ac.accordion-faq-item.last-element.five {
     padding-left: 32px;
   }
-  .ac.is-active > .ac-header .ac-trigger:after {
+  .ac.is-active > .ac-header .ac-trigger::after {
     content: none;
   }
   li.ac {
