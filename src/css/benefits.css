@@ -56,7 +56,7 @@
   height: auto;
 }
 
-.benefits-button {
+.benefits-button-link {
   display: block;
   padding: 18px 36px;
   justify-content: center;
@@ -69,9 +69,6 @@
   cursor: pointer;
   margin-top: 32px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.benefits-button-link {
   color: #fafafa;
   font-size: 16px;
   font-style: normal;
@@ -130,10 +127,9 @@
   .benefits-list-item {
     width: 332px;
   }
-  .benefits-button {
-    margin: 0 auto 0 0;
-  }
-  .benefits-button:hover {
+
+  .benefits-button-link:hover {
     border: 1px solid #fafafa;
+    margin: 0 auto 0 0;
   }
 }
