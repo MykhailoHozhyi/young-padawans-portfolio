@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     orderProjectBtn.addEventListener('click', function() {
-        alert('Замовлення проекту');
+
         closeMenuFunc();
     });
 
