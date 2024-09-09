@@ -1,7 +1,3 @@
-.ac .ac-trigger:after {
-  content: none;
-}
-
 .title-faq {
   margin-left: 16px;
   margin-bottom: 32px;
@@ -117,13 +113,14 @@ p.answer-faq {
   .accordion-container-faq {
     display: flex;
     flex-wrap: wrap;
-
     list-style: none;
   }
   .accordion-container-faq {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 0;
+    row-gap: 0;
     position: relative;
+    align-items: stretch;
   }
 
   .accordion-container-faq::before {
@@ -132,7 +129,7 @@ p.answer-faq {
     left: calc(50% - 10px);
     top: 0;
     bottom: 0;
-    left: 49%;
+    left: 50%;
     width: 1px;
     height: 100vh;
     background-color: #fafafa33;
@@ -153,5 +150,13 @@ p.answer-faq {
 
   .accordion-faq-item:nth-child(6n-1) {
     border-bottom: 1px solid #fafafa33;
+  }
+  .ac .ac-trigger:after {
+    content: none;
+  }
+  .ac.accordion-faq-item.null,
+  .ac.accordion-faq-item.third,
+  .ac.accordion-faq-item.last-element.five {
+    padding-left: 32px;
   }
 }
