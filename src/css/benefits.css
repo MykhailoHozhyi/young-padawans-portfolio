@@ -68,8 +68,7 @@
   background-color: transparent;
   cursor: pointer;
   margin-top: 32px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .benefits-button-link {
