@@ -165,4 +165,7 @@ p.answer-faq {
   .ac.accordion-faq-item.last-element.five {
     padding-left: 32px;
   }
+  .ac.is-active > .ac-header .ac-trigger:after {
+    content: none;
+  }
 }
