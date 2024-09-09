@@ -91,11 +91,6 @@
 .reviews-btn-accent:hover,
 .reviews-btn-accent:focus {
   transition: 300ms cubic-bezier(0.41, 0.6, 0.52, 0.93);
-  background: radial-gradient(
-    circle,
-    rgba(0, 65, 232) 0%,
-    rgba(2, 0, 36, 0) 100%
-  );
 }
 
 .reviews-icon {
