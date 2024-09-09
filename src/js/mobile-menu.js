@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('burger-menu');
     const closeMenu = document.getElementById('closeMenu');
     const mobileMenu = document.getElementById('mobileMenu');
-    const orderProjectBtn = document.getElementById('order-project');
+    const orderProject = document.getElementById('orderProject');
     const mobileNavItems = document.querySelectorAll('.mobile-navigation-item a');
 
     function openMenu() {
@@ -15,18 +15,30 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = ''; 
     }
 
+    function smoothScrollToSection(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+
+        closeMenuFunc();
+    }
+
     menuToggle.addEventListener('click', openMenu);
 
     closeMenu.addEventListener('click', closeMenuFunc);
 
     mobileNavItems.forEach(item => {
-        item.addEventListener('click', closeMenuFunc);
+        item.addEventListener('click', smoothScrollToSection);
     });
 
-    orderProjectBtn.addEventListener('click', function() {
-
-        closeMenuFunc();
-    });
+    orderProject.addEventListener('click', smoothScrollToSection);
 
     document.addEventListener('click', function(event) {
         const isClickInsideMenu = mobileMenu.contains(event.target);
