@@ -168,4 +168,7 @@ p.answer-faq {
   .ac.is-active > .ac-header .ac-trigger:after {
     content: none;
   }
+  li.ac {
+    margin-top: 0;
+  }
 }
