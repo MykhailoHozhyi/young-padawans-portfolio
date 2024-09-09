@@ -49,7 +49,6 @@ const defaultOptions = {
 async function makeReviews() {
   try {
     const reviews = await getReviews();
-    console.log(reviews);
 
     renderReviews(reviews);
   } catch (error) {
