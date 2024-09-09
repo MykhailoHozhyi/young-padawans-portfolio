@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- <link rel="stylesheet" href="/src/css/styles.css" /> -->
+    <link rel="stylesheet" href="/src/css/header.css" />
+    <title>Vanilla App Template</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container-header">
+        <div class="photo-name">
+          <img
+            class="header-img"
+            src="/src/images/header/header-desktop-logo@2x.jpg"
+            alt="photo"
+          />
+          <p class="header-name">jefferson*</p>
+        </div>
+        <div class="menu-container">
+          <button class="menu-btn" id="menuBtn">Menu</button>
+          <div class="menu-content" id="menuContent">
+            <a class="header-menu-items" href="/src/partials/about-me.html"
+              >About me</a
+            >
+            <a class="header-menu-items" href="/src/partials/benefits.html"
+              >Benefits</a
+            >
+            <a class="header-menu-items" href="/src/partials/projects.html"
+              >Projects</a
+            >
+            <a class="header-menu-items" href="/src/partials/faq.html">FAQ</a>
+          </div>
+        </div>
+
+        <div class="burger-menu-container">
+          <button class="burger-menu-btn">
+            <svg
+              class="burger-menu-icon"
+              width="28"
+              height="28"
+              aria-label="icon burger menu"
+            >
+              <use href="/src/images/icons/icons-sprite.svg#burger"></use>
+            </svg>
+          </button>
+        </div>
+
+        <button class="header-order-btn">
+          <span class="header-order-btn-text"
+            ><a href="./footer.html">Order the project</a></span
+          >
+        </button>
+      </div>
+    </header>
+
+    <script type="module" src="/src/js/header.js"></script>
+  </body>
+</html>
