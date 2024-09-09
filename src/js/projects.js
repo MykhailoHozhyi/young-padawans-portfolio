@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initialSlide: 0,
     loop: false,
     spaceBetween: 30,
-    mousewheel: true,
+    // mousewheel: true,
     grabCursor: true,
     navigation: {
       nextEl: '.swiper-button-next',
