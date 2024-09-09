@@ -157,12 +157,18 @@ p.answer-faq {
   .ac .ac-trigger:after {
     content: none;
   }
-  .ac .ac-trigger:beffor {
+  .ac .ac-trigger:before {
     content: none;
   }
   .ac.accordion-faq-item.null,
   .ac.accordion-faq-item.third,
   .ac.accordion-faq-item.last-element.five {
     padding-left: 32px;
+  }
+  .ac.is-active > .ac-header .ac-trigger:after {
+    content: none;
+  }
+  li.ac {
+    margin-top: 0;
   }
 }
