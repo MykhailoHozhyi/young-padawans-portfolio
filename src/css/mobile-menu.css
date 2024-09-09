@@ -1,26 +1,3 @@
-/* .mobile-menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(-90deg,
-        #1c1d20 49.69%,
-        #001958 67.71%,
-        #0041e8 99.91%);
-    background-image: url(/images/hero/hero-blue-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px 16px 32px 16px;
-    box-sizing: border-box;
-} */
-
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -39,7 +16,6 @@
 }
 
 .mobile-menu.hidden {
-    /* display: none; */
     transform: translateX(-100%);
 }
 
@@ -86,7 +62,7 @@
 }
 
 .order-project {
-    background: #0041E8;
+    background-color: #0041E8;
     border-radius: 60px;
     padding: 14px 31px;
     max-width: max-content;
@@ -98,6 +74,7 @@
     font-size: 14px;
     letter-spacing: -0.02em;
     color: #fafafa;
+    display: inline-block;
 }
 
 @media screen and (min-resolution: 192dpi) {
