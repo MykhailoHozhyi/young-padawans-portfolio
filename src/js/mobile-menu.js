@@ -15,15 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = ''; 
     }
 
-    function smoothScrollToSection(event) {
+    function scrollToSection(event) {
         event.preventDefault();
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
 
         if (targetElement) {
             window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: 'smooth'
+                top: targetElement.offsetTop
             });
         }
 
@@ -35,10 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
     closeMenu.addEventListener('click', closeMenuFunc);
 
     mobileNavItems.forEach(item => {
-        item.addEventListener('click', smoothScrollToSection);
+        item.addEventListener('click', scrollToSection);
     });
 
-    orderProject.addEventListener('click', smoothScrollToSection);
+    orderProject.addEventListener('click', scrollToSection);
 
     document.addEventListener('click', function(event) {
         const isClickInsideMenu = mobileMenu.contains(event.target);
