@@ -26,11 +26,6 @@
 }
 
 .swiper-slide {
-    /* text-align: center; */
-    /* font-size: 18px; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +37,6 @@
     width: 24px;
     height: 24px;
     background-color: none;
-    /* border-radius: 50%; */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -66,7 +60,6 @@
     display: none;
 }
 
-/* Позиціонуємо кнопки під слайдером */
 .swiper-button-prev {
     position: static;
 }
@@ -146,7 +139,6 @@
 .swiper-slide:not(.swiper-slide-active) .projects-item-link:focus,
 .swiper-slide:not(.swiper-slide-active) .projects-item-link:hover {
     background-color: initial;
-    /* Скидання кольору на неактивних слайдах */
 }
 
 .project-item-image {
@@ -165,7 +157,6 @@
     width: 100%;
     max-width: 311px;
     height: 195px;
-    /* object-position: center; */
 }
 
 .projects-arrows {
@@ -183,7 +174,6 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    /* border: 1px solid rgba(250, 250, 250, 0.2); */
     border: 1px solid rgba(250, 250, 250, 0.5);
     border-radius: 60px;
     padding: 14px;
@@ -194,7 +184,6 @@
     color: #fafafa;
 }
 
-/* Tablet */
 @media only screen and (min-width: 768px) {
 
     .projects-item-content {
@@ -233,7 +222,6 @@
     }
 }
 
-/* Desktop */
 @media only screen and (min-width: 1440px) {
 
     .project-item {
@@ -265,6 +253,4 @@
         width: 177px;
         height: 55px;
     }
-
-
 }

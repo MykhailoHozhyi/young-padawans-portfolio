@@ -80,13 +80,11 @@ btnProjectLink.forEach((button) => {
     }
   });
 
-//свайпер
-let direction = 1; // 1 - вперед, -1 - назад
-
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.projects-swiper', {
     initialSlide: 0,
     loop: false,
+    spaceBetween: 30,
     mousewheel: true,
     grabCursor: true,
     navigation: {
@@ -94,29 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.swiper-button-prev',
     },
     speed: 1000,
-    on: {
-      slideChange: function () {
-        if (swiper.isEnd) {
-          direction = -1;
-        }
-        else if (swiper.isBeginning) {
-          direction = 1;
-        }
-      },
-    },
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
-  });
-
-  setInterval(() => {
-    if (direction === 1) {
-      swiper.slideNext();
-    } else {
-      swiper.slidePrev();
-    }
-  }, 3000);
+      });
 });
 
 
