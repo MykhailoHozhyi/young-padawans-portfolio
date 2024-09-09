@@ -1,15 +1,15 @@
 .scroll-up {
   position: fixed;
   right: 8px;
-  bottom: 50px;
+  bottom: 15px;
   z-index: 1000;
   width: 50px;
   height: 50px;
   color: #fcf9f9;
   cursor: pointer;
   border-radius: 50%;
-  background-color: #757577;
-  box-shadow: inset 0 0 0 4px #0041e8;
+  background-color: #0041e8;
+  box-shadow: inset 0 0 0 4px #01288d;
   visibility: hidden;
   opacity: 0;
   transform: translateY(25px);
@@ -17,6 +17,7 @@
 }
 .scroll-up::before {
   content: "UP";
+  letter-spacing: 1px;
   position: absolute;
   transform: scale(1.5);
   top: 2px;

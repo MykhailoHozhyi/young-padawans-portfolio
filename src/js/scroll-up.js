@@ -5,10 +5,10 @@ const getTop = () => window.scrollY || document.documentElement.scrollTop;
 
 const updateScrollUp = () => {
   const height = document.documentElement.scrollHeight - window.innerHeight;
-  const step = height / 30;
+  const step = height / 25;
   let value = getTop() / step;
   value = Math.max(0, Math.min(value, 100));
-  scrollUp.style.boxShadow = `inset 0 0 0 ${value}px #0041E8`;
+  scrollUp.style.boxShadow = `inset 0 0 0 ${value}px #01288d`;
 };
 
 const onScroll = () => {
