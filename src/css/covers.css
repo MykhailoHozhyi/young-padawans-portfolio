@@ -1,0 +1,52 @@
+.covers-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 508px;
+  overflow: hidden;
+  margin-top: 96px;
+  padding-top: 0;
+}
+.marquee {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.marquee__inner {
+  display: flex;
+  gap: 44px;
+  transform: rotate(16deg);
+}
+.marquee__line {
+  width: 282px;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.covers-card-img {
+  width: 100%;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .covers-section {
+    height: 960px;
+  }
+  .marquee__line {
+    width: 544px;
+  }
+}
