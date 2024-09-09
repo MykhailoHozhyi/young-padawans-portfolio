@@ -15,7 +15,7 @@
   <script type="module" crossorigin src="/young-padawans-portfolio/index.js"></script>
   <link rel="modulepreload" crossorigin href="/young-padawans-portfolio/assets/vendor-Bl3yGGPp.js">
   <link rel="stylesheet" crossorigin href="/young-padawans-portfolio/assets/vendor-1fpgoxVD.css">
-  <link rel="stylesheet" crossorigin href="/young-padawans-portfolio/assets/index-c5Ib6skP.css">
+  <link rel="stylesheet" crossorigin href="/young-padawans-portfolio/assets/index-o1Csz1Sw.css">
 </head>
 
 <body>
@@ -62,7 +62,7 @@
       </nav>
     </div>
 
-    <button class="burger-menu-btn" type="button">
+    <button class="burger-menu-btn" id="burger-menu" type="button">
       <svg
         class="burger-menu-icon"
         width="28"
@@ -80,19 +80,23 @@
 </header>
 
   <div class="mobile-menu-backdrop">
-  <nav class="mobile-menu" id="mobileMenu" class="hidden">
-    <button class="mobile-close-btn" id="closeMenu" type="button">
-      <svg class="mobile-close-icon">
-        <use href="/young-padawans-portfolio/assets/icons-sprite-C8WDg4Bz.svg#close"></use>
-      </svg>
-    </button>
-    <ul class="mobile-nav-list">
-      <li class="mobile-navigation-item"><a href="#about">About me</a></li>
-      <li class="mobile-navigation-item"><a href="#benefits">Benefits</a></li>
-      <li class="mobile-navigation-item"><a href="#projects">Projects</a></li>
-      <li class="mobile-navigation-item"><a href="#faq">FAQ</a></li>
-    </ul>
-    <button class="order-project" id="order-project">Order the project</button>
+  <nav class="mobile-menu hidden" id="mobileMenu">
+    <div class="mobile-menu-container container">
+      <button class="mobile-close-btn" id="closeMenu" type="button">
+        <svg class="mobile-close-icon">
+          <use href="/young-padawans-portfolio/assets/icons-sprite-C8WDg4Bz.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-nav-list">
+        <li class="mobile-navigation-item"><a href="#about">About me</a></li>
+        <li class="mobile-navigation-item"><a href="#benefits">Benefits</a></li>
+        <li class="mobile-navigation-item"><a href="#projects">Projects</a></li>
+        <li class="mobile-navigation-item"><a href="#faq">FAQ</a></li>
+      </ul>
+      <button class="order-project" id="order-project">
+        Order the project
+      </button>
+    </div>
   </nav>
 </div>
 
