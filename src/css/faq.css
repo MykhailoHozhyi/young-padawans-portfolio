@@ -1,3 +1,7 @@
+.ac .ac-trigger:after {
+  content: none;
+}
+
 .title-faq {
   margin-left: 16px;
   margin-bottom: 32px;
@@ -149,15 +153,5 @@ p.answer-faq {
 
   .accordion-faq-item:nth-child(6n-1) {
     border-bottom: 1px solid #fafafa33;
-  }
-  li#ac-0.ac.accordion-faq-item,
-  li#ac-4.ac.accordion-faq-item,
-  li#ac-2.ac.accordion-faq-item {
-    padding-right: 32px;
-  }
-  li#ac-1.ac.accordion-faq-item,
-  li#ac-3.ac.accordion-faq-item,
-  li#ac-5.ac.accordion-faq-item {
-    padding-left: 32px;
   }
 }
