@@ -1,7 +1,6 @@
 /* ===================MOBILE STYLES======================= */
 
 .header {
-  padding-top: 0;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -9,11 +8,11 @@
   top: 0;
   left: 0;
   right: 0;
+  padding: 32px;
 }
 
 .container-header {
   display: flex;
-  margin-top: 32px;
   align-items: flex-start;
   width: 100%;
   justify-content: space-between;
