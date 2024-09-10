@@ -79,7 +79,7 @@
 
 @media screen and (min-resolution: 192dpi) {
     .mobile-menu {
-        background-image: url(../images/hero/hero-mobile-blue-bg@2x.png);
+        background-image: url(/images/hero/hero-mobile-blue-bg@2x.png);
     }
 }
 
