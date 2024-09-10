@@ -55,7 +55,7 @@ const slideItemsMarkup = projects.map(({ imgDeskTop, imgDeskTop2x, imgMob, imgMo
               <p class="projects-item-text">
                 Programming Across Borders: Ideas, Technologies, Innovations
               </p>
-              <button class="projects-item-link">See project</button>
+              <a class="projects-item-link" rel="external noopener" href="https://github.com/MykhailoHozhyi/young-padawans-portfolio" target='_blank'>See project</a>
             </div>
             <div class="project-item-image">
               <picture>
@@ -85,34 +85,31 @@ const slideItemsMarkup = projects.map(({ imgDeskTop, imgDeskTop2x, imgMob, imgMo
 
 slideContainer.innerHTML = slideItemsMarkup;
 
-const btnProjectLink = document.querySelectorAll('.projects-item-link');
-
-btnProjectLink.forEach((button) => {
-    if (button) {
-      button.addEventListener('click', () => {
-        button.blur();
-        window.open('https://github.com/MykhailoHozhyi/young-padawans-portfolio', '_blank')
-      });
-    }
-  });
-
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.projects-swiper', {
     initialSlide: 0,
     loop: false,
     spaceBetween: 30,
-    // mousewheel: true,
     grabCursor: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
     speed: 1000,
-      });
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'ArrowRight') {
+      swiper.slideNext(1000);
+    } else if (event.key === 'ArrowLeft') {
+      swiper.slidePrev(1000);
+    } else if (event.key === 'Tab') {
+      event.preventDefault();
+      if (event.shiftKey) {
+        swiper.slidePrev(1000);
+      } else {
+        swiper.slideNext(1000);
+      }
+    }
+  });
 });
-
-
-
-
-
-
