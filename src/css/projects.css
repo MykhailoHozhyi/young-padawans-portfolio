@@ -158,7 +158,7 @@
 .project-item-image img {
     width: 100%;
     max-width: 311px;
-    height: 195px;
+    height: auto;
 }
 
 /* Tablet */
@@ -196,7 +196,7 @@
 
     .project-item-image img {
         max-width: 614px;
-        height: 385px;
+        height: auto;
     }
 }
 
