@@ -1,11 +1,14 @@
 .covers-section {
+  padding: 82px 0;
+}
+.cover-wrraper {
   position: relative;
-  display: flex;
-  align-items: center;
-  height: 508px;
   overflow: hidden;
-  margin-top: 96px;
-  padding-top: 0;
+  height: 508px;
+  background-image: url("/images/covers/covers-ellipse-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .marquee {
   position: absolute;
@@ -43,10 +46,16 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .covers-section {
+  .cover-wrraper {
     height: 960px;
   }
   .marquee__line {
     width: 544px;
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 320px) {
+  .covers-section {
+    background-image: url(/images/covers/covers-ellipse-bg@2x.png);
   }
 }
