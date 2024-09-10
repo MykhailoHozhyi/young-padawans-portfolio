@@ -1,6 +1,5 @@
 .reviews {
-  padding-top: 32px;
-  padding-bottom: 48px;
+  padding-bottom: 64px;
 }
 
 .reviews-title {
@@ -90,8 +89,7 @@
 
 @media screen and (min-width: 768px) {
   .reviews {
-    padding-top: 48px;
-    padding-bottom: 64px;
+    padding-bottom: 96px;
   }
 
   .reviews-swiper-button-prev,
@@ -107,7 +105,6 @@
 
 @media screen and (min-width: 1440px) {
   .reviews {
-    padding-top: 82px;
     padding-bottom: 164px;
   }
 }
