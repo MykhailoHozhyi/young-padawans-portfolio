@@ -9,12 +9,24 @@ const modalText = document.querySelector('.title-footer-message')
 
 closeModalBtn.addEventListener('click', closeModal);
 form.addEventListener('submit', handleSubmit);
+modalOverlay.addEventListener('click', handleBackdropClick)
 
 
 
 
 function closeModal (e) {
     modalOverlay.classList.remove('is-open')
+    document.removeEventListener('keydown', handleKeyPress)
+}
+function handleBackdropClick(e) {
+    if (e.target === modalOverlay) {
+        closeModal();
+    }
+}
+function handleKeyPress(e) {
+    if (e.key === 'Escape') {
+        closeModal();
+    }
 }
 async function handleSubmit(e) {
     e.preventDefault();
@@ -25,8 +37,8 @@ async function handleSubmit(e) {
         email: formData.get('email'),
         comment: formData.get('comment')
     };
-    console.log(requestData);
-    
+
+
 
     const fetchOptions = {
         method: 'POST',
@@ -62,11 +74,13 @@ async function handleSubmit(e) {
         modalText.textContent = data.message;
         modalOverlay.classList.add('is-open');
         form.reset();
+        document.addEventListener('keydown', handleKeyPress);
     } catch (error) {
         console.log(error);
         modalOverlay.classList.add('is-open');
         modalTitle.textContent = 'Something went wrong';
         modalText.textContent = error.message;
+        document.addEventListener('keydown', handleKeyPress);
     }
 }
 
