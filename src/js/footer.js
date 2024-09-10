@@ -1,4 +1,4 @@
-const form = document.querySelector('.footer-form');
+const form = document.querySelector('.form');
 const modalOverlay = document.querySelector('.modal-overlay');
 const closeModalBtn = document.querySelector('.close-btn');
 const modalTitle = document.querySelector('.title-footer-modal')

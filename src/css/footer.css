@@ -1,6 +1,7 @@
-.footer-form {
+.footer-form-box {
     display: flex;
     flex-wrap: wrap;
+    padding: 32px 0;
 }
 .footer-bg{
     background-image: url(/images/work-together/work-together-bg.png);
@@ -8,37 +9,42 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+.footer-logo-box{
+    position: relative;
+    margin-bottom: 64px;
+}
+.footer-logo-picture{
+    position: absolute;
+    display: block;
+    width: 44px;
+    height: 44px;
+}
+.footer-logo-img{
+    width: 44px;
+    height: 44px;
+    border-radius: 15px;
+}
 @media screen and (min-resolution: 192dpi) {
     .footer-bg {
       background-image: url(/images/work-together/work-together-bg@2x.png);
     }
   }
-.footer-logo{
-    width: 44px;
-    height: 44px;
-    border-radius: 17px;
-    margin-right: 8px;
-}
 .title-footer {
     color: #FAFAFA;
     font-size: 40px;
-    line-height: 40px; 
+    line-height: 48px; 
     letter-spacing: -1.2px;
     text-transform: uppercase;
+    text-indent: 52px;
+
 }
+
 
 .title-footer-work {
     color: #0041E8;
 }
 
-.title-footer-together {
-    color: #FAFAFA;
-    font-size: 40px;
-    line-height: 40px; 
-    letter-spacing: -1.2px;
-    text-transform: uppercase;
-    margin-bottom: 64px;
-}
+
 .form-input-box{
     margin-bottom: 32px;
 }
@@ -81,7 +87,8 @@ select:-webkit-autofill {
     color: #FAFAFA;
     line-height: normal;
     letter-spacing: -0.32px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 32px;
 }
 .footer-btn-send:hover {
     background-color: #01288d;
@@ -188,46 +195,40 @@ top: 20px;
         background-size: 728px 636px;
         background-position: right -544px bottom -10px;
     }
-    .footer-logo{
+    .footer-form-box{
+        padding: 88px 0 169px 0;
+    }
+    .footer-logo-picture{
+        width: 70px;
+        height: 70px;
+    }
+    .footer-logo-img{
         width: 70px;
         height: 70px;
         border-radius: 27px;
-        margin-right: 20px;
     }
     .title-footer{
+        text-indent: 90px;
         font-size: 64px;
-        line-height: 64px;
+        line-height: 74px;
         letter-spacing: -1.92px;
-    }
-    .title-footer-together{
-        font-size: 64px;
-        line-height: 64px;
-        letter-spacing: -1.92px;
-        margin-right: 294px;
     }
     .form-input-box{
+        position: relative;
         display: flex;
         justify-content: center;
     align-items: center;
     gap: 32px;
     margin-bottom: 0;
-    margin-right: auto;
+    margin-right: 32px;
     }
     .footer-input{
         width: 245px;
     }
     .footer-btn-send{
-    }
-    .footer-btn-send{
         width: 150px;
         height: 150px;
         margin: 0;
-    }
-    .form-input-btn-box{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
     }
     .message{
         position:absolute;
@@ -250,18 +251,24 @@ top: 20px;
     .footer-bg{
         background-size: 728px 100%;
         background-position: right -385px bottom -10px;
-        padding: 0 196px 169px;
+    }
+    .footer-form-box {
+        max-width: 1048px;
+        margin: 0 auto;
     }
  .title-footer-together{
     margin-bottom: 64px;
  }
+ .form-input-box{
+    margin-right: 86px;
+ }
  .footer-input{
     width: 390px;
  }
+.form{
+    display: flex;
+}
 
- .form-input-btn-box{
-    margin-bottom: 78px;
- }
  .contact{
     margin-top: 78px;
  }
