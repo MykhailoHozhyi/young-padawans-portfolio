@@ -1,21 +1,26 @@
 .hero {
-  margin: 0 auto;
   padding-top: 281px;
+  padding-bottom: 32px;
   background: linear-gradient(
     -90deg,
     #1c1d20 49.69%,
     #001958 67.71%,
     #0041e8 99.91%
   );
-  background-image: url(/images/hero/hero-blue-bg.png);
   background-repeat: no-repeat;
-  background-position: -268px;
-  background-size: 578px 100%;
+  background-position: center;
+  background-size: cover;
 }
 
-@media screen and (min-resolution: 192dpi) {
+@media screen and (max-width: 767px) {
   .hero {
-    background-image: url(/images/hero/hero-blue-bg@2x.png);
+    background-image: url(/images/hero/hero-mobile-blue-bg.png);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(/images/hero/hero-mobile-blue-bg@2x.png);
   }
 }
 
@@ -23,7 +28,6 @@
   display: flex;
   flex-direction: column;
   gap: 212px;
-  padding-bottom: 32px;
 }
 
 .hero-title {
@@ -73,8 +77,6 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-position: -147px;
-    background-size: 728px 100%;
     padding-top: 300px;
   }
 
@@ -109,11 +111,21 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hero {
+    background-image: url(/images/hero/hero-tablet-blue-bg.png);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(/images/hero/hero-tablet-blue-bg@2x.png);
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .hero {
-    background-position: left;
-    background-size: 728px 100%;
-    padding-top: 300px;
+    background-image: url(/images/hero/hero-desktop-blue-bg.png);
   }
 
   .hero-wrapper {
@@ -128,5 +140,11 @@
   .hero-social-link:hover,
   .hero-address-email:hover {
     border: 1px solid #fafafa;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(/images/hero/hero-desktop-blue-bg@2x.png);
   }
 }
