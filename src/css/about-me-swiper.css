@@ -30,6 +30,7 @@
 }
 
 .btn-skill-next {
+  outline: none;
   cursor: pointer;
   height: 28px;
   width: 28px;
