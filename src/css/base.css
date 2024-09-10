@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Inter Tight';
+  src: url(/fonts/InterTight-VariableFont_wght.ttf);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -20,12 +25,16 @@ body {
 }
 
 .section {
-  padding-top: 64px;
-  margin: 0 auto;
-  max-width: 1440px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 @media only screen and (min-width: 768px) {
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
   .container {
     max-width: 768px;
     padding: 0 32px;
@@ -33,11 +42,13 @@ body {
 }
 
 @media only screen and (min-width: 1440px) {
+  .section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
   .container {
     max-width: 1440px;
     padding: 0 32px;
-  }
-  .section {
-    padding-top: 96px;
   }
 }

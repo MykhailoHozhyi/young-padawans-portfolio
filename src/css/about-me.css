@@ -1,3 +1,13 @@
 @import url('./about-me-title.css');
 @import url('./about-me-accord.css');
 @import url('./about-me-swiper.css');
+
+.about-me {
+  padding-top: 64px;
+}
+
+@media screen and (min-width: 1440px) {
+  .about-me {
+    padding-top: 96px;
+  }
+}
