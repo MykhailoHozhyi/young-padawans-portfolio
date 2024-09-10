@@ -30,6 +30,7 @@
 }
 
 .btn-skill-next {
+  outline: none;
   cursor: pointer;
   height: 28px;
   width: 28px;
@@ -44,6 +45,10 @@
   height: 28px;
   fill: none;
   stroke: rgba(250, 250, 250, 0.2);
+}
+
+.btn-skill-next .icon-arrow-right:hover {
+  stroke: #fafafa;
 }
 
 /*  ==================== ADAPTIVE 768px ====================  */
