@@ -1,7 +1,6 @@
 .footer-form-box {
     display: flex;
     flex-wrap: wrap;
-    padding: 32px 0;
 }
 .footer-bg{
     background-image: url(/images/work-together/work-together-bg.png);
@@ -195,7 +194,7 @@ top: 20px;
         background-position: right -515px bottom -10px;
     }
     .footer-form-box{
-        padding: 88px 0 169px 0;
+        padding: 40px 0 121px 0;
     }
     .form{
         display: flex;
@@ -255,7 +254,7 @@ top: 20px;
         background-position: right -325px bottom -10px;
     }
     .footer-form-box {
-        padding: 88px 164px 169px 164px;
+        padding: 88px 164px 121px 164px;
     }
  .title-footer-together{
     margin-bottom: 64px;
