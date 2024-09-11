@@ -5,7 +5,7 @@
 }
 .footer-bg{
     background-image: url(/images/work-together/work-together-bg.png);
-    background-position: right -300px bottom -10px;
+    background-position: right -285px bottom -10px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -88,7 +88,6 @@ select:-webkit-autofill {
     line-height: normal;
     letter-spacing: -0.32px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-top: 32px;
 }
 .footer-btn-send:hover {
     background-color: #01288d;
@@ -193,10 +192,13 @@ top: 20px;
 @media screen and (min-width: 768px) {
     .footer-bg{
         background-size: 728px 636px;
-        background-position: right -544px bottom -10px;
+        background-position: right -515px bottom -10px;
     }
     .footer-form-box{
         padding: 88px 0 169px 0;
+    }
+    .form{
+        display: flex;
     }
     .footer-logo-picture{
         width: 70px;
@@ -250,11 +252,10 @@ top: 20px;
 @media screen and (min-width: 1440px){
     .footer-bg{
         background-size: 728px 100%;
-        background-position: right -385px bottom -10px;
+        background-position: right -325px bottom -10px;
     }
     .footer-form-box {
-        max-width: 1048px;
-        margin: 0 auto;
+        padding: 88px 164px 169px 164px;
     }
  .title-footer-together{
     margin-bottom: 64px;
@@ -268,7 +269,6 @@ top: 20px;
 .form{
     display: flex;
 }
-
  .contact{
     margin-top: 78px;
  }
