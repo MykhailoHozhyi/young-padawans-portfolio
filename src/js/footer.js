@@ -49,6 +49,7 @@ async function handleSubmit(e) {
     };
 
     try {
+        
         const response = await fetch('https://portfolio-js.b.goit.study/api/requests', fetchOptions);
 
         if (!response.ok) {
