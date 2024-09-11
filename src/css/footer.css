@@ -88,9 +88,7 @@ select:-webkit-autofill {
     letter-spacing: -0.32px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-btn-send:hover {
-    background-color: #01288d;
-}
+
 .contact {
     margin-top: 32px;
     display: flex;
@@ -249,6 +247,9 @@ top: 20px;
     }
 }
 @media screen and (min-width: 1440px){
+    .footer-btn-send:hover {
+        background-color: #01288d;
+    }
     .footer-bg{
         background-size: 728px 100%;
         background-position: right -325px bottom -10px;
