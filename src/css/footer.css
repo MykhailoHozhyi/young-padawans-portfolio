@@ -1,12 +1,13 @@
 .footer-form-box {
-    display: flex;
-    flex-wrap: wrap;
-}
-.footer-bg{
+    padding: 32px 16px;
     background-image: url(/images/work-together/work-together-bg.png);
-    background-position: right -285px bottom -10px;
+    background-position: right -270px bottom -10px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}    
+.footer-wrraper{
+    
+    padding: 0px;
 }
 .footer-logo-box{
     position: relative;
@@ -24,7 +25,7 @@
     border-radius: 15px;
 }
 @media screen and (min-resolution: 192dpi) {
-    .footer-bg {
+    .footer-form-box {
       background-image: url(/images/work-together/work-together-bg@2x.png);
     }
   }
@@ -88,9 +89,10 @@ select:-webkit-autofill {
     letter-spacing: -0.32px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contact {
+.address{
     margin-top: 32px;
+}
+.contact {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
@@ -187,12 +189,10 @@ top: 20px;
 
 }
 @media screen and (min-width: 768px) {
-    .footer-bg{
-        background-size: 728px 636px;
-        background-position: right -515px bottom -10px;
-    }
     .footer-form-box{
-        padding: 40px 0 121px 0;
+        background-size: 728px 100%;
+        background-position: right -540px bottom -10px;
+        padding: 88px 32px 169px 32px;
     }
     .form{
         display: flex;
@@ -234,8 +234,11 @@ top: 20px;
         top: 70%;
         left: 0%;
     }
-    .contact{
+    .address{
         margin-top: 78px;
+    }
+    .contact{
+    
         gap: 8px;
     }
     .contact-link{
@@ -247,15 +250,13 @@ top: 20px;
     }
 }
 @media screen and (min-width: 1440px){
-    .footer-btn-send:hover {
-        background-color: #01288d;
-    }
-    .footer-bg{
+    .footer-form-box{
         background-size: 728px 100%;
         background-position: right -325px bottom -10px;
+        padding: 88px 196px 169px 196px;
     }
-    .footer-form-box {
-        padding: 0px 164px 121px 164px;
+    .footer-btn-send:hover {
+        background-color: #01288d;
     }
  .title-footer-together{
     margin-bottom: 64px;
@@ -269,7 +270,4 @@ top: 20px;
 .form{
     display: flex;
 }
- .contact{
-    margin-top: 78px;
- }
 }
