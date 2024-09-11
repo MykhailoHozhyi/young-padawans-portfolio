@@ -1,11 +1,11 @@
 .covers-section {
-  padding: 82px 0;
+  padding: 32px 0;
 }
 .cover-wrraper {
   position: relative;
   overflow: hidden;
   height: 508px;
-  background-image: url("/images/covers/covers-ellipse-bg.png");
+  background-image: url("/images/covers/covers-mobile-blue-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -48,8 +48,24 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .covers-section {
+    padding: 48px 0;
+  }
   .cover-wrraper {
     height: 960px;
+    background-image: url("/images/covers/covers-tablet-blue-bg.png");
+  }
+  .marquee__line {
+    width: 544px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .covers-section {
+    padding: 82px 0;
+  }
+  .cover-wrraper {
+    background-image: url("/images/covers/covers-desktop-blue-bg.png");
   }
   .marquee__line {
     width: 544px;
@@ -57,7 +73,19 @@
 }
 
 @media (min-resolution: 192dpi) and (min-width: 320px) {
-  .covers-section {
-    background-image: url(/images/covers/covers-ellipse-bg@2x.png);
+  .cover-wrraper {
+    background-image: url("/images/covers/covers-mobile-blue-bg@2x.png");
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 768px) {
+  .cover-wrraper {
+    background-image: url("/images/covers/covers-tablet-blue-bg@2x.png");
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1440px) {
+  .cover-wrraper {
+    background-image: url("/images/covers/covers-desktop-blue-bg@2x.png");
   }
 }
