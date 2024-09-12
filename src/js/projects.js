@@ -66,8 +66,18 @@ const projects = [
 const slideContainer = document.querySelector('.projects-list');
 
 const slideItemsMarkup = projects
-  .map(({ imgDeskTop, imgDeskTop2x, imgMob, imgMob2x, alt }) => {
-    return `
+  .map(
+    ({
+      imgDeskTop,
+      imgDeskTop2x,
+      imgMob,
+      imgMobwebp,
+      imgDeskTopwebp2x,
+      imgDeskTopwebp,
+      imgMob2x,
+      alt,
+    }) => {
+      return `
     <li class="project-item swiper-slide">
              <div class="projects-item-content">
               <div class="projects-item-technologies">
@@ -85,7 +95,7 @@ const slideItemsMarkup = projects
               <picture>
                 <source
                   srcset="
-                    ${imgMobwebp2x}  2x,
+                    ${imgMob2x}  2x,
                     ${imgMobwebp} 1x
                   "
                   media="(max-width: 767px)"
@@ -126,7 +136,8 @@ const slideItemsMarkup = projects
             </div>
           </li>
   `;
-  })
+    }
+  )
   .join('');
 
 slideContainer.innerHTML = slideItemsMarkup;
