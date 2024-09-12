@@ -11,10 +11,6 @@ const swiperAboutMe = new Swiper('.swiper-about-me', {
   grabCursor: true,
   simulateTouch: true,
   slideToClickedSlide: true,
-  keyboard: {
-    enabled: true,
-  },
-  longSwipes: false,
   navigation: {
     nextEl: '.btn-skill-next',
   },
@@ -32,7 +28,11 @@ const swiperAboutMe = new Swiper('.swiper-about-me', {
 });
 
 const onBtnSwiperKeydown = e => {
-  if (e.key === 'Tab') {
+  if (e.key === 'ArrowRight') {
+    swiperAboutMe.slideNext(1300);
+  } else if (e.key === 'ArrowLeft') {
+    swiperAboutMe.slidePrev(1300);
+  } else if (e.key === 'Tab') {
     e.preventDefault();
     swiperAboutMe.slideNext(1300);
   }
