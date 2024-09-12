@@ -71,10 +71,11 @@ const slideItemsMarkup = projects
       imgDeskTop,
       imgDeskTop2x,
       imgMob,
-      imgMobwebp,
-      imgDeskTopwebp2x,
-      imgDeskTopwebp,
       imgMob2x,
+      imgMobwebp,
+      imgMobwebp2x,
+      imgDeskTopwebp,
+      imgDeskTopwebp2x,
       alt,
     }) => {
       return `
@@ -95,7 +96,7 @@ const slideItemsMarkup = projects
               <picture>
                 <source
                   srcset="
-                    ${imgMob2x}  2x,
+                    ${imgMobwebp2x}  2x,
                     ${imgMobwebp} 1x
                   "
                   media="(max-width: 767px)"
