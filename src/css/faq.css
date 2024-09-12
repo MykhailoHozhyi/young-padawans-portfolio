@@ -142,7 +142,7 @@ p.answer-faq {
   .accordion-faq-item {
     flex: 1 1 calc(50% - 10px);
   }
-  .ac.accordion-faq-item#ac-4,
+  .ac.accordion-faq-item.beforethree,
   .ac.accordion-faq-item#ac-7 {
     border-bottom: 1px solid #fafafa33;
   }
