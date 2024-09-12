@@ -1,6 +1,3 @@
-.covers-section {
-  padding: 32px 0;
-}
 .cover-wrraper {
   position: relative;
   overflow: hidden;
@@ -46,9 +43,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .covers-section {
-    padding: 48px 0;
-  }
   .cover-wrraper {
     height: 960px;
     background-image: url("/images/covers/covers-tablet-blue-bg.png");
@@ -59,9 +53,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .covers-section {
-    padding: 82px 0;
-  }
   .cover-wrraper {
     background-image: url("/images/covers/covers-desktop-blue-bg.png");
   }
