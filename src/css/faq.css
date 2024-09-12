@@ -110,69 +110,65 @@ p.answer-faq {
 .ac.is-active > .ac-header .ac-trigger::after {
   content: none;
 }
-@media (min-width: 1440px) {
-  .ac.accordion-faq-item {
-    width: calc(50% - 15px);
-    border-bottom: none;
-    justify-content: space-between;
-    margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .ac-trigger.accordion-faq-button {
+    padding-top: 32px;
   }
-  .accordion-container-faq {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+  p.answer-faq {
+    margin-bottom: 24px;
   }
-  .accordion-container-faq {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 0;
-    row-gap: 0;
-    position: relative;
-    align-items: stretch;
-  }
-
-  .accordion-container-faq::before {
-    content: '';
-    position: absolute;
-    left: calc(50% - 10px);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 1px;
-    height: 100vh;
-    background-color: #fafafa33;
-    height: 100%;
-    transform: translateX(-50%);
-  }
+}
+@media only screen and (min-width: 1440px) {
   .li#ac-0.ac.accordion-faq-item.js-enebled {
     margin-top: 0;
   }
-  #ac-0,
-  #ac-1,
-  #ac-2,
-  #ac-3,
-  #ac-4,
-  #ac-5 {
-    margin-top: 0;
-  }
 
-  .accordion-faq-item:nth-child(6n-1) {
-    border-bottom: 1px solid #fafafa33;
-  }
   .ac .ac-trigger::after {
     content: none;
   }
   .ac .ac-trigger::before {
     content: none;
   }
+  .ac.is-active > .ac-header .ac-trigger::after {
+    content: none;
+  }
+  li.ac.accordion-faq-item {
+    margin-top: 0;
+  }
+  .accordion-container-faq {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .accordion-faq-item {
+    flex: 1 1 calc(50% - 10px);
+  }
+  .ac.accordion-faq-item.beforethree,
+  .ac.accordion-faq-item#ac-7 {
+    border-bottom: 1px solid #fafafa33;
+  }
+
   .ac.accordion-faq-item.null,
   .ac.accordion-faq-item.third,
   .ac.accordion-faq-item.last-element.five {
     padding-left: 32px;
+    min-height: 100%;
+    margin-bottom: 0;
   }
-  .ac.is-active > .ac-header .ac-trigger::after {
-    content: none;
+
+  .ac.accordion-faq-item.beforenull,
+  .ac.accordion-faq-item.beforetwo,
+  .ac.accordion-faq-item.beforethree {
+    min-height: 100%;
+    padding-right: 32px;
+    border-right: 1px solid #fafafa33;
+    margin-bottom: 0;
   }
-  li.ac {
-    margin-top: 0;
+
+  .ac-trigger.accordion-faq-button {
+    padding-top: 32px;
+    padding-bottom: 42px;
+  }
+  p.answer-faq {
+    margin-bottom: 26px;
   }
 }
