@@ -92,13 +92,13 @@ document.addEventListener('DOMContentLoaded', () => {
     spaceBetween: 30,
     grabCursor: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.projects-swiper-button-next',
+      prevEl: '.projects-swiper-button-prev',
     },
     speed: 1000,
   });
 
-  document.addEventListener('keydown', event => {
+  const keydownHandler = (event) => {
     if (event.key === 'ArrowRight') {
       swiper.slideNext(1000);
     } else if (event.key === 'ArrowLeft') {
@@ -111,5 +111,23 @@ document.addEventListener('DOMContentLoaded', () => {
         swiper.slideNext(1000);
       }
     }
-  });
+  };
+
+  const swiperContainer = document.querySelector('.projects-swiper'); 
+
+  document.addEventListener('keydown', keydownHandler);
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        document.removeEventListener('keydown', keydownHandler);
+       } else {
+         document.addEventListener('keydown', keydownHandler);
+       }
+    });
+  }, { threshold: 0.1 });
+
+  observer.observe(swiperContainer);
+  
 });
+
