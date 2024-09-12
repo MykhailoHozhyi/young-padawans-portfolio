@@ -1,5 +1,9 @@
 import Swiper from 'swiper/bundle';
 
+const containerAboutMeSwiper = document.querySelector(
+  '.container-about-me-swiper'
+);
+
 const swiperAboutMe = new Swiper('.swiper-about-me', {
   loop: true,
   slidesPerGroup: 1,
@@ -7,10 +11,6 @@ const swiperAboutMe = new Swiper('.swiper-about-me', {
   grabCursor: true,
   simulateTouch: true,
   slideToClickedSlide: true,
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
   navigation: {
     nextEl: '.btn-skill-next',
   },
@@ -26,3 +26,31 @@ const swiperAboutMe = new Swiper('.swiper-about-me', {
     },
   },
 });
+
+const onBtnSwiperKeydown = e => {
+  if (e.key === 'ArrowRight') {
+    swiperAboutMe.slideNext(1300);
+  } else if (e.key === 'ArrowLeft') {
+    swiperAboutMe.slidePrev(1300);
+  } else if (e.key === 'Tab') {
+    e.preventDefault();
+    swiperAboutMe.slideNext(1300);
+  }
+};
+
+const observerOptions = {
+  root: null,
+  rootMargin: '0px 0px 0px 0px',
+  threshold: 1,
+};
+
+const observerCallBack = entries => {
+  if (entries[0].isIntersecting) {
+    document.addEventListener('keydown', onBtnSwiperKeydown);
+  } else {
+    document.removeEventListener('keydown', onBtnSwiperKeydown);
+  }
+};
+
+const observer = new IntersectionObserver(observerCallBack, observerOptions);
+observer.observe(containerAboutMeSwiper);
