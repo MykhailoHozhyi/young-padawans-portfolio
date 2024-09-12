@@ -5,8 +5,6 @@ import 'swiper/css';
 import { Navigation, Scrollbar } from 'swiper/modules';
 
 const reviewsList = document.querySelector('.reviews-list');
-const prevBtnEl = document.querySelector('.reviews-icon-prev');
-const nextBtnEl = document.querySelector('.reviews-icon-next');
 
 // #region scroll
 import 'overlayscrollbars/overlayscrollbars.css';
@@ -89,13 +87,15 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.reviews-swiper-button-prev',
     },
 
-    slidesPerView: 1,
     breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 16,
+      },
       768: {
         slidesPerView: 2,
         spaceBetween: 16,
       },
-
       1440: {
         slidesPerView: 4,
         spaceBetween: 16,
