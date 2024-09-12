@@ -76,6 +76,9 @@ const slideItemsMarkup = projects.map(({ imgDeskTop, imgDeskTop2x, imgMob, imgMo
                 <img
                   src="${imgDeskTop}"
                   alt="${alt}"
+                  width="614"
+                  height="385"
+                  loading="lazy"
                 />
               </picture>
             </div>
