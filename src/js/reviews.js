@@ -59,7 +59,11 @@ function renderReviews(reviews) {
   const markup = reviews
     .map(item => {
       return `<li class="reviews-item  swiper-slide">
-          <img src="${item.avatar_url}" alt="${item.author}" />
+          <img src="${item.avatar_url}" alt="${item.author}"
+          width="48"
+                  height="48"
+                  loading="lazy"
+ />
           <h3>${item.author}</h3>
           <p>${item.review}</p>
         </li>`;
@@ -99,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  document.addEventListener('keydown', event => {
+  const keydownHandler = event => {
     if (event.key === 'ArrowRight') {
       swiper.slideNext(1000);
     } else if (event.key === 'ArrowLeft') {
@@ -112,5 +116,24 @@ document.addEventListener('DOMContentLoaded', () => {
         swiper.slideNext(1000);
       }
     }
-  });
+  };
+
+  const swiperContainer = document.querySelector('.reviews-swiper');
+
+  document.addEventListener('keydown', keydownHandler);
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          document.removeEventListener('keydown', keydownHandler);
+        } else {
+          document.addEventListener('keydown', keydownHandler);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  observer.observe(swiperContainer);
 });
