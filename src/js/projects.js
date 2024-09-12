@@ -1,49 +1,73 @@
 import Swiper from 'swiper/bundle';
 
+import prjDeskTopSl1webp from '/images/projects/projects-desktop-slide-1.webp';
+import prjDeskTopSl1webp2x from '/images/projects/projects-desktop-slide-1@2x.webp';
 import prjDeskTopSl1 from '/images/projects/projects-desktop-slide-1.jpg';
 import prjDeskTopSl12x from '/images/projects/projects-desktop-slide-1@2x.jpg';
+import prjMobSl1webp from '/images/projects/projects-mobile-slide-1.webp';
+import prjMobSl1webp2x from '/images/projects/projects-mobile-slide-1@2x.webp';
 import prjMobSl1 from '/images/projects/projects-mobile-slide-1.jpg';
 import prjMobSl12x from '/images/projects/projects-mobile-slide-1@2x.jpg';
 
+import prjDeskTopSl2webp from '/images/projects/projects-desktop-slide-2.webp';
+import prjDeskTopSl2webp2x from '/images/projects/projects-desktop-slide-2@2x.webp';
 import prjDeskTopSl2 from '/images/projects/projects-desktop-slide-2.jpg';
 import prjDeskTopSl22x from '/images/projects/projects-desktop-slide-2@2x.jpg';
+import prjMobSl2webp from '/images/projects/projects-mobile-slide-2.webp';
+import prjMobSl2webp2x from '/images/projects/projects-mobile-slide-2@2x.webp';
 import prjMobSl2 from '/images/projects/projects-mobile-slide-2.jpg';
 import prjMobSl22x from '/images/projects/projects-mobile-slide-2@2x.jpg';
 
+import prjDeskTopSl3webp from '/images/projects/projects-desktop-slide-3.webp';
+import prjDeskTopSl3webp2x from '/images/projects/projects-desktop-slide-3@2x.webp';
 import prjDeskTopSl3 from '/images/projects/projects-desktop-slide-3.jpg';
 import prjDeskTopSl32x from '/images/projects/projects-desktop-slide-3@2x.jpg';
+import prjMobSl3webp from '/images/projects/projects-mobile-slide-3.webp';
+import prjMobSl3webp2x from '/images/projects/projects-mobile-slide-3@2x.webp';
 import prjMobSl3 from '/images/projects/projects-mobile-slide-3.jpg';
 import prjMobSl32x from '/images/projects/projects-mobile-slide-3@2x.jpg';
 
-
 const projects = [
   {
+    imgDeskTopwebp: `${prjDeskTopSl1webp}`,
+    imgDeskTopwebp2x: `${prjDeskTopSl1webp2x}`,
     imgDeskTop: `${prjDeskTopSl1}`,
     imgDeskTop2x: `${prjDeskTopSl12x}`,
+    imgMobwebp: `${prjMobSl1webp}`,
+    imgMobwebp2x: `${prjMobSl1webp2x}`,
     imgMob: `${prjMobSl1}`,
     imgMob2x: `${prjMobSl12x}`,
-    alt: 'Project 1'
+    alt: 'Project 1',
   },
   {
+    imgDeskTopwebp: `${prjDeskTopSl2webp}`,
+    imgDeskTopwebp2x: `${prjDeskTopSl2webp2x}`,
     imgDeskTop: `${prjDeskTopSl2}`,
     imgDeskTop2x: `${prjDeskTopSl22x}`,
+    imgMobwebp: `${prjMobSl2webp}`,
+    imgMobwebp2x: `${prjMobSl2webp2x}`,
     imgMob: `${prjMobSl2}`,
     imgMob2x: `${prjMobSl22x}`,
-    alt: 'Project 2'
+    alt: 'Project 2',
   },
   {
+    imgDeskTopwebp: `${prjDeskTopSl3webp}`,
+    imgDeskTopwebp2x: `${prjDeskTopSl3webp2x}`,
     imgDeskTop: `${prjDeskTopSl3}`,
     imgDeskTop2x: `${prjDeskTopSl32x}`,
+    imgMobwebp: `${prjMobSl3webp}`,
+    imgMobwebp2x: `${prjMobSl3webp2x}`,
     imgMob: `${prjMobSl3}`,
     imgMob2x: `${prjMobSl32x}`,
-    alt: 'Project 3'
-  }
+    alt: 'Project 3',
+  },
 ];
 
 const slideContainer = document.querySelector('.projects-list');
 
-const slideItemsMarkup = projects.map(({ imgDeskTop, imgDeskTop2x, imgMob, imgMob2x, alt}) => {
-  return `
+const slideItemsMarkup = projects
+  .map(({ imgDeskTop, imgDeskTop2x, imgMob, imgMob2x, alt }) => {
+    return `
     <li class="project-item swiper-slide">
              <div class="projects-item-content">
               <div class="projects-item-technologies">
@@ -61,10 +85,27 @@ const slideItemsMarkup = projects.map(({ imgDeskTop, imgDeskTop2x, imgMob, imgMo
               <picture>
                 <source
                   srcset="
+                    ${imgMobwebp2x}  2x,
+                    ${imgMobwebp} 1x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
                     ${imgMob2x}  2x,
                     ${imgMob} 1x
                   "
                   media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ${imgDeskTopwebp2x} 2x,
+                    ${imgDeskTopwebp}    1x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
                 />
                 <source
                   srcset="
@@ -72,6 +113,7 @@ const slideItemsMarkup = projects.map(({ imgDeskTop, imgDeskTop2x, imgMob, imgMo
                     ${imgDeskTop}    1x
                   "
                   media="(min-width: 768px)"
+                  type="image/jpg"
                 />
                 <img
                   src="${imgDeskTop}"
@@ -84,7 +126,8 @@ const slideItemsMarkup = projects.map(({ imgDeskTop, imgDeskTop2x, imgMob, imgMo
             </div>
           </li>
   `;
- }).join('');
+  })
+  .join('');
 
 slideContainer.innerHTML = slideItemsMarkup;
 
@@ -101,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
     speed: 1000,
   });
 
-  const keydownHandler = (event) => {
+  const keydownHandler = event => {
     if (event.key === 'ArrowRight') {
       swiper.slideNext(1000);
     } else if (event.key === 'ArrowLeft') {
@@ -116,21 +159,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  const swiperContainer = document.querySelector('.projects-swiper'); 
+  const swiperContainer = document.querySelector('.projects-swiper');
 
   document.addEventListener('keydown', keydownHandler);
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
-        document.removeEventListener('keydown', keydownHandler);
-       } else {
-         document.addEventListener('keydown', keydownHandler);
-       }
-    });
-  }, { threshold: 0.1 });
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          document.removeEventListener('keydown', keydownHandler);
+        } else {
+          document.addEventListener('keydown', keydownHandler);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
 
   observer.observe(swiperContainer);
-  
 });
-
