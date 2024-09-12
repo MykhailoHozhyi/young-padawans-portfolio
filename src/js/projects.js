@@ -71,6 +71,7 @@ const slideItemsMarkup = projects
       imgDeskTop,
       imgDeskTop2x,
       imgMob,
+      imgMob2x,
       imgMobwebp,
       imgDeskTopwebp2x,
       imgDeskTopwebp,
