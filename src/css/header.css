@@ -18,7 +18,7 @@
   justify-content: space-between;
 }
 
-.photo-name {
+.header-link-picture {
   display: flex;
   gap: 8px;
 }
