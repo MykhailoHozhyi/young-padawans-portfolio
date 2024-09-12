@@ -1,6 +1,6 @@
 .scroll-up {
   position: fixed;
-  right: 8px;
+  right: 3px;
   bottom: 15px;
   z-index: 1000;
   width: 50px;

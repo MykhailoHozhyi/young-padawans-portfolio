@@ -9,8 +9,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 .marquee {
   position: absolute;
