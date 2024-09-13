@@ -39,16 +39,10 @@
   stroke: #ffffff;
   transition: transform 0.3s ease;
 }
-.arrow-fag:active {
+.accordion-faq-item.is-active .arrow-faq {
   transform: rotate(180deg);
 }
 
-.div.wrapper-title-faq {
-  fill: #fafafa;
-  border-radius: 100px 0px 0px 0px;
-  border: 1px 0px 0px 0px;
-  border-color: #fafafa;
-}
 .ac-trigger.accordion-faq-button:focus {
   color: #fafafa;
 }
@@ -81,15 +75,6 @@ button#ac-trigger-5.ac-trigger.accordion-faq-button::after {
 }
 p.answer-faq {
   margin-bottom: 20px;
-}
-.arrow-faq {
-  fill: none;
-  stroke: #ffffff;
-  stroke-width: 2px;
-  transition: transform 0.3s ease;
-}
-.accordion-faq-item.active .arrow-faq {
-  transform: rotate(180deg);
 }
 .accordion-faq-item.active .ac-panel {
   display: block;
