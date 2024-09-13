@@ -12,7 +12,7 @@
   border-top: 1px solid #fafafa33;
   border-left: none;
   border-right: none;
-  margin-bottom: 15px;
+  margin-top: 0;
 }
 .ac.accordion-faq-item.last-element {
   border-bottom: 1px solid #fafafa33;
@@ -117,6 +117,10 @@ p.answer-faq {
   p.answer-faq {
     margin-bottom: 24px;
   }
+  .ac-trigger.accordion-faq-button {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 @media only screen and (min-width: 1440px) {
   .li#ac-0.ac.accordion-faq-item.js-enebled {
@@ -170,5 +174,9 @@ p.answer-faq {
   }
   p.answer-faq {
     margin-bottom: 26px;
+  }
+  .ac-trigger.accordion-faq-button {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
