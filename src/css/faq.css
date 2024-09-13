@@ -171,6 +171,7 @@ p.answer-faq {
   .ac-trigger.accordion-faq-button {
     padding-top: 32px;
     padding-bottom: 42px;
+    gap: 30px;
   }
   p.answer-faq {
     margin-bottom: 26px;
