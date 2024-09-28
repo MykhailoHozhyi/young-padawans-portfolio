@@ -6,10 +6,8 @@
   border: none;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   padding-bottom: 32px;
-  margin-top: 0;
-}
-.about-ac + .about-ac {
   padding-top: 20px;
+  margin-top: 0;
 }
 .arrow-down {
   transition: transform 0.6s ease;
@@ -17,6 +15,7 @@
 .about-ac-header {
   min-height: 40px;
   position: relative;
+  transition: margin 0.6s ease;
 }
 .ac.about-ac .ac-trigger.about-ac-trigger {
   font:
@@ -52,8 +51,8 @@
 .about-ac.is-active .arrow-down {
   transform: rotate(180deg);
 }
-.about-ac.is-active .about-ac-panel {
-  margin-top: 16px;
+.about-ac.is-active .about-ac-header {
+  margin-bottom: 16px;
 }
 .ac.about-ac .ac-panel.about-ac-panel .ac-text.about-ac-text {
   font:
@@ -93,7 +92,7 @@
   .about-accordion-container {
     margin-bottom: 64px;
   }
-  .about-ac + .about-ac {
+  .about-ac {
     padding-top: 32px;
   }
   .about-ac-text {
@@ -107,6 +106,6 @@
   }
   .about-ac-text {
     max-width: 612px;
-    margin: 0 68px 32px auto !important;
+    margin: 0 68px 0 auto !important;
   }
 }
